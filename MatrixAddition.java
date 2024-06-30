@@ -1,14 +1,19 @@
 import java.util.*;
 
 public class MatrixAddition {
+    /**
+     * Adds two matrices of size m x n and prints the result.
+     *
+     * @param args command line arguments (not used)
+     */
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
-            int m = sc.nextInt(); // rows
-            int n = sc.nextInt(); // columns
+            int m = sc.nextInt(); // Number of rows
+            int n = sc.nextInt(); // Number of columns
 
-            long m1[][] = new long[m][n];
-            long m2[][] = new long[m][n];
-            long ans[][] = new long[m][n];
+            long[][] m1 = new long[m][n];
+            long[][] m2 = new long[m][n];
+            long[][] ans = new long[m][n];
 
             int i, j = 0;
             for (i = 0; i < m; i++) {
