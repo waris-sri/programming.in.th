@@ -1,11 +1,6 @@
 import java.util.*;
 
 public class MatrixAddition {
-    /**
-     * Adds two matrices of size m x n and prints the result.
-     *
-     * @param args command line arguments (not used)
-     */
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             int m = sc.nextInt(); // Number of rows
