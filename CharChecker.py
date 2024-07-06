@@ -1,3 +1,4 @@
+"""CharChecker"""
 s = str(input(""))
 if s.isupper() == True:
     print("All Capital Letter")

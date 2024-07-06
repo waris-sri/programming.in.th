@@ -13,11 +13,11 @@ public class Modulo {
             for (int i = 0; i < 10; i++) {
                 vals[i] = sc.nextInt();
             }
-            
+
             for (int i = 0; i < 10; i++) {
                 vals[i] = vals[i] % 42;
             }
-            
+
             int uniqueCnt = 0;
             int[] uniqueVals = new int[10];
             for (int i = 0; i < 10; i++) {
@@ -39,7 +39,7 @@ public class Modulo {
     }
 }
 
-// Using HashSet (better):
+// Using HashSet (better; submitted this):
 // public class Modulo {
 //     public static void main(String[] args) {
 //         try (Scanner sc = new Scanner(System.in)) {

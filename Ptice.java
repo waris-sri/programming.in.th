@@ -5,27 +5,33 @@ public class Ptice {
         try (Scanner sc = new Scanner(System.in)) {
             int n = sc.nextInt();
             String keyAns = sc.next().toUpperCase();
-            
+
             String adrian = "ABC";
             String bruno = "BABC";
             String goran = "CCAABB";
-            
+
             int adrianScore = 0;
             int brunoScore = 0;
             int goranScore = 0;
 
             for (int i = 0; i < n; i++) {
                 char valid = keyAns.charAt(i);
-                if (valid == adrian.charAt(i % adrian.length())) adrianScore++;
-                if (valid == bruno.charAt(i % bruno.length())) brunoScore++;
-                if (valid == goran.charAt(i % goran.length())) goranScore++;
+                if (valid == adrian.charAt(i % adrian.length()))
+                    adrianScore++;
+                if (valid == bruno.charAt(i % bruno.length()))
+                    brunoScore++;
+                if (valid == goran.charAt(i % goran.length()))
+                    goranScore++;
             }
 
             int maxScore = Math.max(adrianScore, Math.max(brunoScore, goranScore));
             System.out.println(maxScore);
-            if (adrianScore == maxScore) System.out.println("Adrian");
-            if (brunoScore == maxScore) System.out.println("Bruno");
-            if (goranScore == maxScore) System.out.println("Goran");
+            if (adrianScore == maxScore)
+                System.out.println("Adrian");
+            if (brunoScore == maxScore)
+                System.out.println("Bruno");
+            if (goranScore == maxScore)
+                System.out.println("Goran");
         }
     }
 }

@@ -1,18 +1,21 @@
 import java.util.Scanner;
+
 public class Okviri {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             /*
-             * break each line into its own and keep appending it to itself within string length
+             * break each line into its own and keep appending it to itself within string
+             * length
              * access and pull out each character from the string with charAt()
              * for each character index on the multiple of 3, replace # with *
-             * overlap the * frame (higher importance) above # frame; delete the last character of l2 first
+             * overlap the * frame (higher importance) above # frame; delete the last
+             * character of l2 first
              */
             String str = sc.nextLine();
             StringBuilder l1 = new StringBuilder(); // same as l5
             StringBuilder l2 = new StringBuilder(); // same as l4
             StringBuilder l3 = new StringBuilder();
-            
+
             for (int i = 1; i <= str.length(); i++) {
                 if (i == 1) {
                     l1.append("..#..");

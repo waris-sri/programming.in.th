@@ -1,3 +1,4 @@
+"""MinMax"""
 n = int(input())
 max = -2000000000
 min = 2000000000

@@ -12,7 +12,7 @@ public class ABC {
             for (i = 0; i < 3; i++) {
                 num[i] = sc.nextInt();
             }
-            
+
             String abc = sc.next().toUpperCase();
             Arrays.sort(num); // A < B < C
 
