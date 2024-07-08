@@ -29,8 +29,7 @@ public class Reseto {
 }
 
 /*
- * Use 2-index array since sequence starts with 2 and for straightforward
- * reference
+ * Use 2-index array since sequence starts with 2 and for easy reference
  * Initially set all elements in array to 0
  * Prepare a counter to increment each time when:
  * - the element at current index is 0
