@@ -3,7 +3,7 @@ import java.util.*;
 public class Trik {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
-            // state all 3 possible positions as indices
+            // State all 3 possible positions as indices
             int[] pos = new int[] { 0, 1, 2 };
             String input = sc.next().toUpperCase();
 
