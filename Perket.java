@@ -20,7 +20,7 @@ public class Perket {
         for (int subset = 1; subset <= totalPossibleSubsets; subset++) {
             int sourness = 1, bitterness = 0; // Initiate ground values to be calculated on later
             // Convert each subset to binary string:
-            // `1` = include current, `0` = exclude current
+            // `1` = include current ingredient, `0` = exclude current ingredient
             String binarySubset = Integer.toBinaryString(subset);
             for (int i = 0; i < binarySubset.length(); i++) {
                 if (binarySubset.charAt(binarySubset.length() - 1 - i) == '1') {
