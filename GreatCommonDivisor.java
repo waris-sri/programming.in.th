@@ -5,13 +5,13 @@ public class GreatCommonDivisor {
         try (Scanner sc = new Scanner(System.in)) {
             int a = sc.nextInt();
             int b = sc.nextInt();
-            System.out.println(findGcd(a, b));
+            System.out.println(gcd(a, b));
         }
     }
 
-    static int findGcd(int a, int b) {
+    static int gcd(int a, int b) {
         if (b == 0)
             return a;
-        return findGcd(b, a % b);
+        return gcd(b, a % b);
     }
 }
