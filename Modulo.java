@@ -41,14 +41,14 @@ public class Modulo {
 
 // Using HashSet (better; submitted this):
 // public class Modulo {
-//     public static void main(String[] args) {
-//         try (Scanner sc = new Scanner(System.in)) {
-//             Set<Integer> vals = new HashSet<>();
-//             for (int i = 0; i < 10; i++) {
-//                 int mod = sc.nextInt() % 42;
-//                 vals.add(mod);
-//             }
-//             System.out.println(vals.size());
-//         }
-//     }
+// public static void main(String[] args) {
+// try (Scanner sc = new Scanner(System.in)) {
+// Set<Integer> vals = new HashSet<>();
+// for (int i = 0; i < 10; i++) {
+// int mod = sc.nextInt() % 42;
+// vals.add(mod);
+// }
+// System.out.println(vals.size());
+// }
+// }
 // }
